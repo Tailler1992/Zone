@@ -1,0 +1,28 @@
+header.header
+    .header__container
+        .header__menu
+            include ../logo/logo
+            include ../nav/nav
+            .header__button
+                +btn("", "#", "Contact Us")
+            .header__calling
+                a.header__calling-link
+                    include calling.svg
+            .header__burger
+
+        .header__content
+            .header__column
+                h1.header__title Virtual Reality Business Solutions
+                .header__description
+                    | We have over 15 year exprience in business consultting arena.
+                    | We have over 15 year exprience in business consultting arena and artficial intelligence.
+                .header__line
+                    .header__line-button
+                        +btn("button_theme-big", "#", "Join Us")
+                    a.header__line-link(href="#")
+                        include play.svg
+                    a.header__line-text(href="#")
+                        | Watch video
+            .header__column
+                img.header__column-image(src="img/Saly.png" alt="Saly")
+

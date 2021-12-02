@@ -1,0 +1,11 @@
+mixin card(title, link)
+
+    .card
+        .card__icon&attributes(attributes)
+            block
+        h3.card__title= title
+        .card__text
+            | Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+            | Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        a.card__link(href="#")= link
+            include vector.svg

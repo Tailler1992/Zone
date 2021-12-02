@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    &__title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 8px;
+    }
+}

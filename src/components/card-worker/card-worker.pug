@@ -1,0 +1,20 @@
+mixin card-worker(fullname, post)
+
+    .card-worker
+        .card-worker__avatar&attributes(attributes)
+            block
+        h3.card-worker__fullname= fullname
+        .card-worker__post= post
+        .card-worker__social
+            .card-worker__social-icon
+                a.card-worker__social-link
+                    include skype.svg
+            .card-worker__social-icon
+                a.card-worker__social-link
+                    include linkedin.svg
+            .card-worker__social-icon
+                a.card-worker__social-link
+                    include twitter.svg
+            .card-worker__social-icon
+                a.card-worker__social-link
+                    include fb.svg

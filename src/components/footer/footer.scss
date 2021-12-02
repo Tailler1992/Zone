@@ -1,0 +1,178 @@
+.footer {
+    &__container {
+        border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+    }
+    &__top {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1024px) {
+            display: block;
+        }
+        &-column {
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+        &-list {
+            font-family: DM Sans;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+        }
+        &-item:first-child {
+            font-weight: 500;
+        }
+        &-link {
+            transition: all 0.2s linear;
+
+            &:visited {
+                color: #ffffff;
+            }
+            &:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+    &__contacts {
+        font-family: DM Sans;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.8);
+
+        @media (max-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+            display: block;
+        }
+        &-link {
+            transition: all 0.2s linear;
+            color: inherit;
+            &:visited {
+                color: #ffffff;
+            }
+            &:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    &__logo-icon {
+        position: relative;
+        display: inline-block;
+        width: 33px;
+
+        top: 4px;
+    }
+    &__address {
+        margin-bottom: 15px;
+    }
+    &__phone {
+        margin-bottom: 15px;
+        position: relative;
+    }
+    &__email {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    &__social {
+        display: flex;
+        margin-bottom: 32.8px;
+        line-height: 26px;
+        @media (max-width: 1024px) {
+            flex-basis: 100%;
+            justify-content: center;
+            margin-top: 32.8px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 0;
+            justify-content: flex-start;
+        }
+        &-icon {
+            margin-right: 15px;
+        }
+        &-link {
+            display: inline-block;
+            border: 1px solid #ffffff14;
+            width: 32.2px;
+            height: 32.2px;
+            border-radius: 50%;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+            transition: transform 0.2s linear;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+            & svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__bottom {
+        max-width: 1210px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 33px;
+        padding-bottom: 36px;
+        font-family: Rubik;
+        font-size: 14px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.8);
+
+        &-list {
+            display: flex;
+        }
+        &-item {
+            padding-right: 53px;
+            @media (max-width: 1024px) {
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            @media (max-width: 570px) {
+                display: none;
+            }
+        }
+        &-link {
+            transition: all 0.2s linear;
+            display: inline-block;
+            &:visited {
+                color: #ffffff;
+            }
+            &:hover {
+                transform: scale(1.2);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+}

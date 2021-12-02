@@ -1,0 +1,68 @@
+include footer-links
+
+footer.footer
+    .footer__container
+        .footer__top
+            .footer__contacts
+                .footer__logo
+                    include ../logo/logo
+                .footer__address
+                    .footer__logo-icon
+                        include location.svg
+                    | Dhaka, Bangladesh
+                .footer__phone
+                    a.footer__logo-icon(href="tel:0943833399")
+                        include calling.svg
+                    a.footer__contacts-link(href="tel:0943833399")
+                        |0943833399
+                .footer__email
+                    a.footer__logo-icon(href="mailto:support@zone.com")
+                        include message.svg
+                    a.footer__contacts-link(href="mailto:support@zone.com")
+                        |support@zone.com
+                .footer__social
+                    .footer__social-icon
+                        a.footer__social-link
+                            include fb.svg
+                    .footer__social-icon
+                        a.footer__social-link
+                            include tw.svg
+                    .footer__social-icon
+                        a.footer__social-link
+                            include inst.svg
+                    .footer__social-icon
+                        a.footer__social-link
+                            include pint.svg
+            each key in links
+                .footer__top-column
+                    ul.footer__top-list
+                        li.footer__top-item
+                            .footer__top-title= key.link1
+                        li.footer__top-item
+                            a.footer__top-link= key.link2
+                        li.footer__top-item
+                            a.footer__top-link= key.link3
+                        li.footer__top-item
+                            a.footer__top-link= key.link4
+                        li.footer__top-item
+                            a.footer__top-link= key.link5
+
+    .footer__bottom
+        .footer__bottom-copyright
+            | © 2021 Zone. - All rights reserved.
+        .footer__bottom-nav
+            ul.footer__bottom-list
+                li.footer__bottom-item
+                    a.footer__bottom-link
+                        | Privacy
+                li.footer__bottom-item
+                    a.footer__bottom-link
+                        | Security
+                li.footer__bottom-item
+                    a.footer__bottom-link
+                        | Terms
+
+
+
+
+

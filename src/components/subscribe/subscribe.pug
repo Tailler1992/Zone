@@ -1,0 +1,15 @@
+.subscribe
+    .subscribe__container
+        .subscribe__elipse
+        .subscribe__box
+            h2.subscribe__title
+                | Subscribe to get the Latest News
+            .subscribe__text
+                | We recommended you to subscribe to our newspaper,
+                | drop your email below to get daily update about us
+            form.subscribe__line(action="" method="get")
+                input.subscribe__input(type="email" placeholder="Enter your email addres")
+                .subscribe__submit
+                    label.subscribe__submit-wrapper
+                        input.subscribe__submit-btn(type="submit" value="Subscribe")
+                        include plane.svg

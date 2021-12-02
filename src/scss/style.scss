@@ -1,0 +1,34 @@
+@import "_nullstile";
+@import "_fonts";
+
+body {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #111827;
+    @media (max-width: 767px) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
+}
+
+//КОМПОНЕНТЫ БЛОКОВ
+@import "../components/logo/logo";
+@import "../components/nav/nav";
+@import "../components/button/button";
+@import "../components/button/_theme/button_theme-big";
+@import "../components/button/_theme/button_theme-small";
+@import "../components/card/card";
+@import "../components/card-worker/card-worker";
+
+//БЛОКИ СТРАНИЦЫ
+@import "../components/header/header";
+@import "../components/service-range/service-range";
+@import "../components/guarantees/guarantees";
+@import "../components/team/team";
+@import "../components/subscribe/subscribe";
+@import "../components/footer/footer";
