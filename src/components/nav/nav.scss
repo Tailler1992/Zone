@@ -31,12 +31,13 @@
 
     &__item {
         margin-right: 60px;
-        padding-top: 20px;
+
         @media (max-width: 1024px) {
             margin-right: 40px;
         }
         @media (max-width: 767px) {
             margin-bottom: 20px;
+            padding-top: 20px;
             font-size: 20px;
         }
     }
